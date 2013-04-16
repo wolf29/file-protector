@@ -10,3 +10,7 @@ What this script is supposed to do:
 3.) send an email to you with the paths in which every file have been placed.  It is easy to forget a series of paths with 32-char random folder names. Most people will appreciate the help.
 4.) display to standard output, the paths to the files.
 
+Note: you will need to add this structure to your robots.txt file if you don't want these fancy directories to be indexed by search engines.
+
+Thanks to the mongoDB folks for help with some of the code.
+
