@@ -22,11 +22,32 @@
 #  
 #  
 
+import random
+import json
 
+import names
+import utility
+import dates
+
+def directory_name(generator=random):
+    '''
+    Generates a random directory name, which is an alphanumeric string of
+    length 1 to 32, selected from a bell curve
+    '''
+    return names.generate_name(32, generator)
 
 def main():
-	
-	return 0
+    fish=[]
+    cat=input("enter the number of files you have to hide: ")
+    i = cat
+    print i
+    for i in range(0, (cat+1)):
+        carp = directory_name(generator=random)
+        fish.append(carp) 
+        print carp
+        print i
+    print fish
+    return 0
 
 if __name__ == '__main__':
 	main()
